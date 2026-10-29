@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="HTML Learning Project - Learn the Building Blocks of the Web"
+    />
+    <title>HTML Learning Project</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: Tema Biru Navy & Krem -->
+    <style>
+      body {
+        background: linear-gradient(135deg, #1b263b, #0d1b2a);
+        min-height: 100vh;
+      }
+      .custom-card {
+        border-left: 4px solid #415a77;
+        background-color: #ffffff;
+      }
+      .custom-blockquote {
+        background: linear-gradient(120deg, #fdfcdc, #f0ead2, #f5f3e7);
+        border-left: 3px solid #1b263b;
+        border-radius: 0.5rem;
+      }
+      pre {
+        background-color: #0d1b2a !important;
+        color: #e0e1dd !important;
+      }
+    </style>
+  </head>
+
+  <body class="py-5">
+    <div class="container bg-white p-4 p-md-5 rounded-4 shadow-lg" style="max-width: 1024px; background-color: #fdfcf7 !important;">
+      
+      <!-- Header -->
+      <header class="text-center mb-5">
+        <h1 class="display-5 fw-bold" style="color: #1b263b;">🌐 HTML Learning Project</h1>
+        <p class="lead text-muted">Master the Building Blocks of the Web</p>
+      </header>
+
+      <main class="vstack gap-4">
+        
+        <!-- What is HTML -->
+        <section id="what-is-html" class="p-4 rounded-3 shadow-sm custom-card">
+          <h2 class="h4 fw-bold pb-2 border-bottom" style="color: #1b263b; border-color: #415a77 !important;">🚀 What is HTML?</h2>
+          <p class="text-secondary">
+            <strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. Think of it as the skeleton or foundation of every website you visit.
+          </p>
+          <blockquote class="p-3 custom-blockquote">
+            <strong style="color: #1b263b;">Key Points:</strong>
+            <ul class="mb-0 mt-2 text-secondary">
+              <li><strong>HyperText:</strong> Text with links to other texts.</li>
+              <li><strong>Markup:</strong> A way to annotate text to show structure and meaning.</li>
+              <li><strong>Language:</strong> A set of rules and syntax for creating web content.</li>
+            </ul>
+          </blockquote>
+          <h3 class="h5 mt-4" style="color: #415a77;">🏗️ How HTML Works</h3>
+          <p class="text-secondary">
+            HTML uses <strong>tags</strong> to define elements. Tags are keywords surrounded by angle brackets like <code>&lt;tagname&gt;</code>. Most tags come in pairs:
+          </p>
+          <pre class="p-3 rounded font-monospace small">&lt;tagname&gt;Content goes here&lt;/tagname&gt; &lt;h1&gt;This is a heading&lt;/h1&gt; &lt;p&gt;This is a paragraph&lt;/p&gt;</pre>
+        </section>
+
+        <!-- Basic Structure -->
+        <section id="basic-structure" class="p-4 rounded-3 shadow-sm custom-card">
+          <h2 class="h4 fw-bold pb-2 border-bottom" style="color: #1b263b; border-color: #415a77 !important;">📋 Basic HTML Structure</h2>
+          <p class="text-secondary">Every HTML document follows this basic structure:</p>
+          <pre class="p-3 rounded font-monospace small">&lt;!DOCTYPE html&gt; &lt;html lang="en"&gt; &lt;head&gt; &lt;meta charset="UTF-8"&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; &lt;title&gt;Page Title&lt;/title&gt; &lt;/head&gt; &lt;body&gt; &lt;h1&gt;Welcome to My Website&lt;/h1&gt; &lt;p&gt;This is my first paragraph.&lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</pre>
+          <blockquote class="p-3 custom-blockquote mt-3">
+            <h3 class="h6 fw-bold" style="color: #1b263b;">Structure Breakdown:</h3>
+            <ul class="mb-0 mt-2 text-secondary">
+              <li><strong>&lt;!DOCTYPE html&gt;</strong> - Tells the browser this is HTML5.</li>
+              <li><strong>&lt;html&gt;</strong> - Root element of the page.</li>
+              <li><strong>&lt;head&gt;</strong> - Contains metadata that is not directly visible on the page.</li>
+              <li><strong>&lt;body&gt;</strong> - Contains the visible content of the webpage.</li>
+            </ul>
+          </blockquote>
+        </section>
+
+        <!-- Essential Tags -->
+        <section id="essential-tags" class="p-4 rounded-3 shadow-sm custom-card">
+          <h2 class="h4 fw-bold pb-2 border-bottom" style="color: #1b263b; border-color: #415a77 !important;">🏷️ Essential HTML Tags</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped align-middle">
+              <thead style="background-color: #1b263b; color: white;">
+                <tr>
+                  <th style="background-color: #1b263b; color: white;">Tag</th>
+                  <th style="background-color: #1b263b; color: white;">Purpose</th>
+                  <th style="background-color: #1b263b; color: white;">Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&lt;h1&gt; - &lt;h6&gt;</td>
+                  <td>Headings (largest to smallest)</td>
+                  <td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td>
+                </tr>
+                <tr>
+                  <td>&lt;p&gt;</td>
+                  <td>Paragraphs</td>
+                  <td><code>&lt;p&gt;This is text&lt;/p&gt;</code></td>
+                </tr>
+                <tr>
+                  <td>&lt;a&gt;</td>
+                  <td>Links</td>
+                  <td><code>&lt;a href="url"&gt;Link text&lt;/a&gt;</code></td>
+                </tr>
+                <tr>
+                  <td>&lt;img&gt;</td>
+                  <td>Images</td>
+                  <td><code>&lt;img src="image.jpg" alt="Description"&gt;</code></td>
+                </tr>
+                <tr>
+                  <td>&lt;div&gt;</td>
+                  <td>Container/section</td>
+                  <td><code>&lt;div&gt;Content here&lt;/div&gt;</code></td>
+                </tr>
+                <tr>
+                  <td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
+                  <td>Lists</td>
+                  <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="h5 mt-4" style="color: #415a77;">🎯 Live Examples</h3>
+          <div class="p-4 rounded border" style="background-color: #f7f5ed; border-color: #415a77 !important;">
+            <h1 class="h3" style="color: #1b263b;">This is an H1 heading</h1>
+            <h2 class="h4" style="color: #1b263b;">This is an H2 heading</h2>
+            <h3 class="h5" style="color: #1b263b;">This is an H3 heading</h3>
+            <p class="text-secondary">This is a paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
+            <p class="text-secondary">Here's a <a href="#" style="color: #415a77;">sample link</a>.</p>
+            <h4 class="h6 fw-bold mt-3" style="color: #1b263b;">Unordered List</h4>
+            <ul class="text-secondary">
+              <li>First item</li>
+              <li>Second item</li>
+              <li>Third item</li>
+            </ul>
+            <h4 class="h6 fw-bold mt-3" style="color: #1b263b;">Ordered List</h4>
+            <ol class="text-secondary">
+              <li>Step one</li>
+              <li>Step two</li>
+              <li>Step three</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- Forms -->
+        <section id="forms" class="p-4 rounded-3 shadow-sm custom-card">
+          <h2 class="h4 fw-bold pb-2 border-bottom" style="color: #1b263b; border-color: #415a77 !important;">📝 HTML Forms</h2>
+          <p class="text-secondary">Forms allow users to input data. Here's a working example:</p>
+          <pre class="p-3 rounded font-monospace small">&lt;form&gt; &lt;label for="name"&gt;Name:&lt;/label&gt; &lt;input type="text" id="name" name="name"&gt; &lt;label for="email"&gt;Email:&lt;/label&gt; &lt;input type="email" id="email" name="email"&gt; &lt;label for="message"&gt;Message:&lt;/label&gt; &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt; &lt;button type="submit"&gt;Submit&lt;/button&gt; &lt;/form&gt;</pre>
+          
+          <div class="p-4 rounded border mt-3" style="background-color: #f7f5ed; border-color: #415a77 !important;">
+            <h4 class="h6 fw-bold mb-3" style="color: #1b263b;">Try this form:</h4>
+            <form>
+              <div class="mb-3">
+                <label for="inputName" class="form-label fw-bold text-secondary">Name:</label>
+                <input type="text" id="inputName" class="form-control" placeholder="Enter your name">
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label fw-bold text-secondary">Email:</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                <label for="selectSubject" class="form-label fw-bold text-secondary">Subject:</label>
+                <select id="selectSubject" class="form-select">
+                  <option value="">Choose a topic...</option>
+                  <option value="question">Question</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="support">Support</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="inputMessage" class="form-label fw-bold text-secondary">Message:</label>
+                <textarea id="inputMessage" class="form-control" rows="5" placeholder="Type your message here..."></textarea>
+              </div>
+              <button type="submit" class="btn text-white" style="background-color: #1b263b;">Submit Form</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Attributes -->
+        <section id="attributes" class="p-4 rounded-3 shadow-sm custom-card">
+          <h2 class="h4 fw-bold pb-2 border-bottom" style="color: #1b263b; border-color: #415a77 !important;">🎨 HTML Attributes</h2>
+          <p class="text-secondary">Attributes provide additional information about HTML elements:</p>
+          <pre class="p-3 rounded font-monospace small">&lt;!-- Common attributes --&gt; &lt;img src="photo.jpg" alt="A beautiful sunset" width="300" height="200"&gt; &lt;a href="https://example.com" target="_blank" title="Visit Example"&gt; Click here &lt;/a&gt; &lt;div class="container" id="main-content" style="color: blue;"&gt; Content &lt;/div&gt;</pre>
+          <blockquote class="p-3 custom-blockquote mt-3">
+            <h3 class="h6 fw-bold" style="color: #1b263b;">Important Attributes:</h3>
+            <ul class="mb-0 mt-2 text-secondary">
+              <li><strong>id</strong> - Unique identifier for an element.</li>
+              <li><strong>class</strong> - Groups elements for styling.</li>
+              <li><strong>src</strong> - Source file for images, videos, etc.</li>
+              <li><strong>href</strong> - URL for links.</li>
+              <li><strong>alt</strong> - Alternative text for images.</li>
+              <li><strong>style</strong> - Inline CSS styling.</li>
+            </ul>
+          </blockquote>
+        </section>
+
+        <!-- Tables -->
+        <section id="tables" class="p-4 rounded-3 shadow-sm custom-card">
+          <h2 class="h4 fw-bold pb-2 border-bottom" style="color: #1b263b; border-color: #415a77 !important;">📊 Tables in HTML</h2>
+          <p class="text-secondary">Tables organize data in rows and columns:</p>
+          <pre class="p-3 rounded font-monospace small">&lt;table&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Name&lt;/th&gt; &lt;th&gt;Age&lt;/th&gt; &lt;th&gt;City&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;John&lt;/td&gt; &lt;td&gt;25&lt;/td&gt; &lt;td&gt;New York&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;</pre>
+          
+          <div class="p-4 rounded border mt-3" style="background-color: #f7f5ed; border-color: #415a77 !important;">
+            <h4 class="h6 fw-bold mb-3" style="color: #1b263b;">Sample Table:</h4>
+            <div class="table-responsive">
+              <table class="table table-hover table-bordered align-middle">
+                <thead style="background-color: #1b263b; color: white;">
+                  <tr>
+                    <th style="background-color: #1b263b; color: white;">Student</th>
+                    <th style="background-color: #1b263b; color: white;">Subject</th>
+                    <th style="background-color: #1b263b; color: white;">Grade</th>
+                    <th style="background-color: #1b263b; color: white;">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Alice Johnson</td>
+                    <td>Mathematics</td>
+                    <td>A+</td>
+                    <td>✅ Passed</td>
+                  </tr>
+                  <tr>
+                    <td>Bob Smith</td>
+                    <td>Physics</td>
+                    <td>B</td>
+                    <td>✅ Passed</td>
+                  </tr>
+                  <tr>
+                    <td>Carol Davis</td>
+                    <td>Chemistry</td>
+                    <td>A</td>
+                    <td>✅ Passed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Practice -->
+        <section id="practice" class="p-4 rounded-3 shadow-sm text-dark" style="background: linear-gradient(120deg, #f0ead2, #dde5b6);">
+          <h2 class="h4 fw-bold pb-2 border-bottom border-dark" style="color: #1b263b;">💻 Practice Exercises</h2>
+          <h3 class="h5 mt-3" style="color: #1b263b;">Beginner Tasks:</h3>
+          <ol class="mb-3">
+            <li>Create a basic HTML page with a title, heading, and paragraph.</li>
+            <li>Add an image with alt text.</li>
+            <li>Create a list of your favorite movies.</li>
+            <li>Build a simple table with your weekly schedule.</li>
+          </ol>
+          <h3 class="h5 mt-3" style="color: #1b263b;">Intermediate Tasks:</h3>
+          <ol class="mb-0">
+            <li>Create a contact form with different input types.</li>
+            <li>Build a navigation menu with links.</li>
+            <li>Design a simple blog post layout.</li>
+            <li>Create a photo gallery grid.</li>
+          </ol>
+        </section>
+
+        <!-- Project Structure -->
+        <section id="project-structure" class="p-4 rounded-3 shadow-sm custom-card">
+          <h2 class="h4 fw-bold pb-2 border-bottom" style="color: #1b263b; border-color: #415a77 !important;">🗂️ Project Structure</h2>
+          <p class="text-secondary">Here's how to organize your HTML project:</p>
+          <pre class="p-3 rounded font-monospace small">my-website/
+│
+├── index.html
+├── about.html
+├── contact.html
+│
+├── css/
+│   └── styles.css
+│
+├── js/
+│   └── script.js
+│
+└── images/
+    ├── logo.png
+    ├── hero-image.jpg
+    └── gallery/
+        ├── photo1.jpg
+        └── photo2.jpg</pre>
+        </section>
+
+        <!-- Next Steps -->
+        <section id="next-steps" class="p-4 rounded-3 shadow-sm" style="background: linear-gradient(120deg, #f5f3e7, #e0e1dd, #f0ead2);">
+          <h2 class="h4 fw-bold pb-2 border-bottom" style="color: #1b263b; border-color: #415a77 !important;">🎯 Next Steps in Your Learning Journey</h2>
+          <p class="text-secondary">After mastering HTML, continue with:</p>
+          <ul class="mb-0 text-secondary">
+            <li><strong>CSS (Cascading Style Sheets)</strong> - Style your HTML elements.</li>
+            <li><strong>JavaScript</strong> - Add interactivity and dynamic behavior.</li>
+            <li><strong>Responsive Design</strong> - Make websites work on all devices.</li>
+            <li><strong>Web Accessibility</strong> - Make websites usable for everyone.</li>
+            <li><strong>Modern Frameworks</strong> - React, Vue.js, or Angular.</li>
+          </ul>
+        </section>
+
+        <!-- Tools -->
+        <section id="tools" class="p-4 rounded-3 shadow-sm custom-card">
+          <h2 class="h4 fw-bold pb-2 border-bottom" style="color: #1b263b; border-color: #415a77 !important;">🔧 Development Tools</h2>
+          <blockquote class="p-3 custom-blockquote mb-0">
+            <strong style="color: #1b263b;">Recommended Tools:</strong>
+            <ul class="mb-0 mt-2 text-secondary">
+              <li><strong>Text Editors:</strong> VS Code, Sublime Text, Atom</li>
+              <li><strong>Browsers:</strong> Chrome DevTools, Firefox Developer Tools</li>
+              <li><strong>Version Control:</strong> Git and GitHub</li>
+              <li><strong>Online Editors:</strong> CodePen, JSFiddle, Replit</li>
+            </ul>
+          </blockquote>
+        </section>
+
+        <!-- Congratulations -->
+        <section id="congratulations" class="p-4 rounded-3 text-white text-center shadow" style="background: linear-gradient(120deg, #1b263b, #415a77);">
+          <h2 class="h4 fw-bold text-white">🎉 Congratulations!</h2>
+          <p class="small text-light mb-2">
+            You've completed the HTML Learning Project! You now understand the fundamentals of HTML and can create your own web pages. Keep practicing and building projects to strengthen your skills.
+          </p>
+          <p class="small text-light fw-bold mb-0">
+            Remember: The best way to learn HTML is by doing. Start building your own projects!
+          </p>
+        </section>
+
+      </main>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
